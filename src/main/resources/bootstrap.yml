@@ -7,10 +7,13 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/Allen2316/todobackend.git
+          default-label: main
+          uri: https://github.com/Allen2316/todobackend
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
+  application:
+    name: config-service
   security:
     user:
       name: root
